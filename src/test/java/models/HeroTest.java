@@ -25,5 +25,18 @@ class HeroTest {
     @AfterEach
     void tearDown() {
     }
+    @Test
+    public void AllHeroesCorrectlyReturned_true() throws Exception{
+        Hero hero = new Hero("Marvel");
+        Hero otherHero = new Hero("Comparing heroes");
+        assertEquals(0, Hero.getAll().size());
+    }
+    @Test
+    public void AllHeroesContainsAllHeroes_true() throws Exception{
+        Hero hero = new Hero("Marvel");
+        Hero otherHero = new Hero("Comparing heroes");
+        assertTrue(Hero.getAll().contains(hero));
+        assertTrue(Hero.getAll().contains(otherHero));
+    }
 
 }
