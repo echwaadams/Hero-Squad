@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SquadTest {
     @Test
     public void newSquad_instantiatesCorrectly_true() throws  Exception{
-        Squad newSquad = Squad.setupNewSquad();
+        Squad newSquad = Squad.setUpNewSquad();
         assertTrue(newSquad instanceof Squad);
     }
     @Test
@@ -69,5 +69,5 @@ class SquadTest {
         assertEquals(1,testSquad.getSquadMembers().get(0).getId());
     }
 
-}
+
 }
