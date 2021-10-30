@@ -1,24 +1,16 @@
+
 {{#partial "content"}}
-
-   <h1>Hero list!</h1>
-
-   {{#if heroes}} <!--if posts exist, then -->
-       {{#each heroess }} <!--loop-->
-        <p>Current hero:</p>
-        <p>{{ name }}</p> <!--show-->
-       {{/each}}
-   {{else}} <!--no posts!-->
-    <p>No Heroes!</p>
-   {{/if}}
-
-   <p>Add a new Hero:</p>
-
-{{!--    <form action="/posts/new" method="post"> --}}
-{{!--        <label for="content">Post Content</label> --}}
-{{!--        <input id="content" name="content" type="text"> --}}
-
-{{!--        <button type="submit" class="btn btn-default">Add new blog post</button> --}}
-{{!--    </form> --}}
+<section class="landing-pg">
+    <div class="land-left">
+    </div>
+    <div class="land-right">
+    </div>
+    <div class="hero-img">
+    </div>
+    <div class="hero-desc">
+      <h3>No Human is Limited</h3>
+        <a href="/hero-form"><button class="hero-btn btns">Create Hero</button></a>
+    </div>
+  </section>
 {{/partial}}
-
 {{> layout.hbs}}
