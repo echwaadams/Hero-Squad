@@ -13,6 +13,11 @@ public class App {
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
+        // get: Adding new heroes
+        get("/hero-form", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "hero-form.hbs");
+        }, new HandlebarsTemplateEngine());
         // get: show hero
         get("/hero", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
