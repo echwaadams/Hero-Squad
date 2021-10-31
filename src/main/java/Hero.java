@@ -1,14 +1,17 @@
 import java.util.ArrayList;
+import javax.swing.text.html.HTMLWriter;
+import java.lang.reflect.Array;
+
 
 public class Hero {
 
     private String name;
     private int age;
     private int id;
-    private String power;
-    private String weakness;
+    private  String power;
+    private  String weakness;
     private static ArrayList<Hero> instances = new ArrayList<>();
-    public Hero(String name, Integer age, String tall, String light) {
+    public Hero(String name, Integer age, String power, String weakness) {
         this.name = name;
         this.age = age;
         this.power = power;

@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.net.HttpRetryException;
+
 
 public class Squad {
     private int squadId;
