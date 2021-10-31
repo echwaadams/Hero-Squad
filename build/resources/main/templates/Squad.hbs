@@ -4,7 +4,7 @@
        <div class="land-right"></div>
        <div class="squad">
            <div id="newMember">
-               <p class="close">& cross ;</p>
+{{!--                <p class="close">& cross ;</p> --}}
                <h2>Choose Squad Members</h2>
            {{#each heroes}}
                <div class="hero-item">
@@ -48,9 +48,9 @@
      {{/if}}
      </div>
    </section>
-   {{/partial}}
-   {{#partial "footer"}}
+{{/partial}}
+{{#partial "footer"}}
          <script type="text/javascript" src="/js/jquery-3.4.0.min.js"></script>
          <script type="text/javascript" src="/js/script.js"></script>
-   {{/partial}}
-   {[> layout.hbs}}
+{{/partial}}
+{{> layout.hbs}}
